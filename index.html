@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Keren Automobiles | Car Repair and Servicing in Karen</title>
+<meta name="description" content="Car servicing, diagnostics, brakes, body work and repairs in Karen, Nairobi. Call 0715 868 511.">
+<link rel="preconnect" href="https://images.pexels.com">
+<style>
+:root{--bg:#ffffff;--fg:#111322;--panel:#e3e5f1;--card:#f4f5fa;--line:#e3e5f1;--mute:#55596b;--accent:#2f3192;--accent2:#3d40b5;--onaccent:#fff;--hl:#ffffff;--linec:#fff;--linehover:#2f3192;--r:10px;--tt:none;--toppos:absolute;--topbg:transparent;--navc:#fff;--navactive:#fff;--drawer:#fff;--drawerc:#111322;--dockbg:#fff;--dockc:#2f3192;--cols:3;--herofade:linear-gradient(0deg,rgba(17,19,34,.9) 0%,rgba(47,49,146,.45) 55%,rgba(17,19,34,.2) 100%);--headfade:linear-gradient(0deg,rgba(17,19,34,.85),rgba(47,49,146,.55));--mapfilter:none;--font:system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif}
+
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--fg);font:300 17px/1.65 var(--font)}
+img{display:block;max-width:100%}a{color:inherit}
+.wrap{max-width:1140px;margin:0 auto;padding:0 max(16px,env(safe-area-inset-left))}
+h1,h2,h3{font-family:var(--font);font-weight:800;line-height:1.08;margin:0}
+h2{font-size:clamp(1.9rem,5vw,2.8rem);text-transform:var(--tt)}
+section{padding:clamp(60px,9vw,100px) 0}
+.ph{background:var(--panel)}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 28px;border-radius:var(--r);font:800 .95rem var(--font);letter-spacing:.04em;text-decoration:none;border:2px solid var(--accent);transition:background .2s,color .2s;text-transform:var(--tt)}
+.btn.fill{background:var(--accent);color:var(--onaccent)}
+.btn.fill:hover{background:var(--accent2);border-color:var(--accent2)}
+.btn.line{color:var(--linec);border-color:var(--linec)}
+.btn.line:hover{background:var(--linec);color:var(--linehover)}
+.ctas{display:flex;gap:12px;flex-wrap:wrap}
+.more{display:inline-block;margin-top:26px;padding:14px 0 10px;font:800 .95rem var(--font);color:var(--accent);text-decoration:none;border-bottom:2px solid currentColor}
+
+/* top bar */
+.top{position:var(--toppos);top:0;left:0;right:0;z-index:20;background:var(--topbg)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:76px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;min-height:48px}
+#nav{display:flex;gap:30px}
+#nav a{text-decoration:none;font:800 .88rem var(--font);text-transform:var(--tt);letter-spacing:.06em;color:var(--navc)}
+#nav a:hover,#nav a[aria-current]{color:var(--navactive)}
+#nav a[aria-current]{text-decoration:underline;text-underline-offset:7px;text-decoration-thickness:2px}
+#menuBtn{display:none;width:48px;height:48px;padding:12px;background:none;border:0;cursor:pointer;position:relative;z-index:40}
+#menuBtn span{display:block;height:2px;background:var(--navc);margin:6px 0;transition:transform .25s,opacity .2s}
+#menuBtn[aria-expanded="true"] span:nth-child(1){transform:translateY(8px) rotate(45deg)}
+#menuBtn[aria-expanded="true"] span:nth-child(2){opacity:0}
+#menuBtn[aria-expanded="true"] span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+.shade{position:fixed;inset:0;background:rgba(0,0,0,.55);opacity:0;pointer-events:none;transition:opacity .3s;z-index:30}
+.shade.on{opacity:1;pointer-events:auto}
+
+/* home hero */
+.hero{position:relative;min-height:min(100svh,820px);display:flex;align-items:flex-end;overflow:hidden;padding:0}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:var(--herofade)}
+.hero .wrap{position:relative;z-index:2;width:100%;padding-bottom:clamp(56px,9vw,96px)}
+.hero h1{font-size:clamp(2.6rem,8vw,5.4rem);max-width:12ch;color:#fff;text-transform:var(--tt)}
+.hero h1 em{font-style:normal;color:var(--hl)}
+.hero p{color:#eee;font-size:clamp(1.05rem,2.2vw,1.25rem);margin:16px 0 28px;max-width:40ch}
+
+/* page header (inner pages) */
+.phead{position:relative;padding:150px 0 70px;overflow:hidden;color:#fff}
+.phead>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.phead::after{content:"";position:absolute;inset:0;background:var(--headfade)}
+.phead .wrap{position:relative;z-index:2}
+.phead h1{font-size:clamp(2.4rem,7vw,4.4rem);text-transform:var(--tt)}
+
+/* service cards */
+.cards{display:grid;grid-template-columns:repeat(var(--cols),1fr);gap:18px;margin-top:40px}
+.card{background:var(--card);border-radius:14px;overflow:hidden;border:1px solid var(--line)}
+.card .pic{aspect-ratio:4/3;overflow:hidden}
+.card img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.card:hover img{transform:scale(1.05)}
+.card h3{font-size:1.05rem;padding:18px 20px 20px;text-transform:var(--tt)}
+
+/* reviews */
+.revs{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px}
+.revs figure{margin:0;padding:26px;background:var(--card);border-top:3px solid var(--accent);border-radius:0 0 12px 12px}
+.revs blockquote{margin:0;font-size:1.05rem}
+.revs figcaption{margin-top:12px;color:var(--mute);font-size:.82rem;text-transform:uppercase;letter-spacing:.12em}
+.revs .todo blockquote{color:var(--mute);font-style:italic}
+
+/* location */
+.loc{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(28px,5vw,60px);align-items:stretch}
+.loc p{color:var(--mute);margin:12px 0 0}
+.hours{margin:24px 0 28px;padding:0;list-style:none;border-top:1px solid var(--line)}
+.hours li{display:flex;justify-content:space-between;gap:12px;padding:13px 0;border-bottom:1px solid var(--line)}
+.hours b{font-weight:600}
+.map{border-radius:16px;overflow:hidden;min-height:360px;background:var(--panel)}
+.map iframe{width:100%;height:100%;min-height:360px;border:0;filter:var(--mapfilter)}
+
+/* services page rows */
+.rows{display:grid;gap:clamp(40px,7vw,80px)}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,5vw,60px);align-items:center}
+.row:nth-child(even) .pic{order:2}
+.row .pic{border-radius:16px;overflow:hidden;aspect-ratio:4/3}
+.row img{width:100%;height:100%;object-fit:cover}
+.row h2{font-size:clamp(1.6rem,4vw,2.3rem);text-transform:var(--tt)}
+.row ul{margin:16px 0 0;padding:0;list-style:none}
+.row li{padding:10px 0;border-bottom:1px solid var(--line)}
+
+/* gallery */
+.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.gal button{padding:0;border:0;background:var(--panel);border-radius:12px;overflow:hidden;aspect-ratio:1;cursor:zoom-in}
+.gal button:nth-child(5n+1){grid-row:span 2;aspect-ratio:auto}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.gal button:hover img{transform:scale(1.04)}
+.lb{position:fixed;inset:0;background:rgba(0,0,0,.92);display:none;align-items:center;justify-content:center;z-index:60;padding:16px}
+.lb.on{display:flex}
+.lb img{max-height:88vh;max-width:100%;border-radius:10px}
+.lb button{position:absolute;top:14px;right:14px;min-width:48px;min-height:48px;background:none;border:0;color:#fff;font:800 1rem var(--font);cursor:pointer}
+
+/* about */
+.about{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(20px,4vw,40px)}
+.about h3{font-size:1.25rem;margin-bottom:10px;text-transform:var(--tt)}
+.about p{margin:0;color:var(--mute)}
+
+footer{border-top:1px solid var(--line);padding:28px 0 36px;color:var(--mute);font-size:.9rem}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+footer nav{display:flex;gap:18px;flex-wrap:wrap}
+footer a{text-decoration:none;padding:6px 0}
+
+.dock{display:none}
+@media (max-width:900px){.cards{--cols:2}.revs{grid-template-columns:1fr}.loc,.row{grid-template-columns:1fr}.row:nth-child(even) .pic{order:0}.about{grid-template-columns:1fr}.gal{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:640px){
+  #menuBtn{display:block}
+  #nav{position:fixed;top:0;right:0;bottom:0;width:min(78vw,300px);flex-direction:column;gap:0;background:var(--drawer);padding:96px 26px 26px;transform:translateX(100%);visibility:hidden;transition:transform .3s,visibility .3s;z-index:35}
+  #nav.open{transform:none;visibility:visible}
+  #nav a{padding:16px 0;border-bottom:1px solid var(--line);font-size:1rem;color:var(--drawerc)}
+  #nav a[aria-current]{color:var(--accent)}
+  .hero{min-height:88svh}
+  .ctas .btn{flex:1 1 140px}
+  .cards{--cols:1}
+  .gal button:nth-child(5n+1){grid-row:auto;aspect-ratio:1}
+  body{padding-bottom:64px}
+  .dock{display:grid;grid-template-columns:1fr 1fr;position:fixed;left:0;right:0;bottom:0;z-index:25;transition:transform .3s;padding-bottom:env(safe-area-inset-bottom);background:var(--dockbg)}
+  .dock.wait{transform:translateY(110%)}
+  .dock a{display:flex;align-items:center;justify-content:center;min-height:60px;text-decoration:none;font:800 .95rem var(--font);text-transform:var(--tt);letter-spacing:.06em;color:var(--dockc)}
+  .dock a+a{background:var(--accent);color:var(--onaccent)}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto}}
+
+.logo b{font:800 1.35rem var(--font);font-style:italic;color:#fff;letter-spacing:.01em}.logo small{display:block;font-size:.7rem;letter-spacing:.3em;text-transform:uppercase;color:#d7d8f5;margin-top:2px}.logo span{line-height:1}.hero h1 em{font-style:normal;color:#aeb1ff}.alt{background:#f4f5fa}.btn.line2{color:var(--accent);border-color:var(--accent)}.btn.line2:hover{background:var(--accent);color:#fff}
+
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="logo" href="index.html"><span><b>Keren</b><small>Automobiles</small></span></a>
+  <button id="menuBtn" type="button" aria-expanded="false" aria-controls="nav" aria-label="Open menu"><span></span><span></span><span></span></button>
+  <nav id="nav" aria-label="Main"><a href="index.html" aria-current="page">Home</a><a href="services.html">Services</a><a href="gallery.html">Gallery</a><a href="about.html">About us</a></nav>
+</div></header>
+<div class="shade" id="shade"></div>
+<main>
+
+<section class="hero ph">
+  <img src="https://images.pexels.com/photos/28153669/pexels-photo-28153669.jpeg?auto=compress&cs=tinysrgb&w=1400" srcset="https://images.pexels.com/photos/28153669/pexels-photo-28153669.jpeg?auto=compress&cs=tinysrgb&w=700 700w,https://images.pexels.com/photos/28153669/pexels-photo-28153669.jpeg?auto=compress&cs=tinysrgb&w=1400 1400w" sizes="100vw" alt="African mechanics repairing an engine together" fetchpriority="high">
+  <div class="wrap">
+    <h1>Your car, <em>looked after.</em></h1>
+    <p>Servicing and repairs in Karen.</p>
+    <div class="ctas" id="heroCtas">
+      <a class="btn fill" href="tel:+254715868511">Call us</a>
+      <a class="btn line" href="https://wa.me/254715868511?text=Hi%20Keren%20Automobiles%2C%20I%27d%20like%20to%20book%20my%20car%20in." target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="wrap">
+    <h2>Our services</h2>
+    <div class="cards"><article class="card"><div class="pic ph"><img src="https://images.pexels.com/photos/12555013/pexels-photo-12555013.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Mechanics checking a car engine" loading="lazy" decoding="async"></div><h3>Servicing</h3></article><article class="card"><div class="pic ph"><img src="https://images.pexels.com/photos/12555016/pexels-photo-12555016.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Hands working on an engine" loading="lazy" decoding="async"></div><h3>Diagnostics</h3></article><article class="card"><div class="pic ph"><img src="https://images.pexels.com/photos/12555010/pexels-photo-12555010.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Mechanic sitting on a vehicle tyre" loading="lazy" decoding="async"></div><h3>Brakes and suspension</h3></article><article class="card"><div class="pic ph"><img src="https://images.pexels.com/photos/28153669/pexels-photo-28153669.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Mechanics repairing an engine" loading="lazy" decoding="async"></div><h3>Engine and gearbox</h3></article><article class="card"><div class="pic ph"><img src="https://images.pexels.com/photos/12555014/pexels-photo-12555014.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Hands of mechanics at work" loading="lazy" decoding="async"></div><h3>Body work and paint</h3></article><article class="card"><div class="pic ph"><img src="https://images.pexels.com/photos/12555015/pexels-photo-12555015.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Mechanics working on an engine" loading="lazy" decoding="async"></div><h3>Electrical and AC</h3></article></div>
+    <a class="more" href="services.html">See all services</a>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <h2>What our clients say</h2>
+    <div class="revs"><figure class="todo"><blockquote>Your customers’ Google reviews will appear here.</blockquote><figcaption>Google review</figcaption></figure><figure class="todo"><blockquote>Your customers’ Google reviews will appear here.</blockquote><figcaption>Google review</figcaption></figure><figure class="todo"><blockquote>Your customers’ Google reviews will appear here.</blockquote><figcaption>Google review</figcaption></figure></div>
+  </div>
+</section>
+<section>
+  <div class="wrap loc">
+    <div>
+      <h2>Our location</h2>
+      <p>Karen, Nairobi.</p>
+      <ul class="hours"><li><span>Monday to Saturday</span><b>Call to confirm</b></li><li><span>Sunday</span><b>Call to confirm</b></li></ul>
+      <a class="btn line2" href="https://www.google.com/maps/dir/?api=1&amp;destination=-1.3197,36.7076" target="_blank" rel="noopener">Get directions</a>
+    </div>
+    <div class="map"><iframe title="Keren Automobiles on the map" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=-1.3197,36.7076&amp;z=16&amp;output=embed"></iframe></div>
+  </div>
+</section>
+</main>
+<footer><div class="wrap">
+  <span>© 2026 Keren Automobiles · 0715 868 511</span>
+  <nav aria-label="Footer"><a href="index.html">Home</a><a href="services.html">Services</a><a href="gallery.html">Gallery</a><a href="about.html">About us</a></nav>
+</div></footer>
+<div class="dock" id="dock">
+  <a href="tel:+254715868511">Call</a>
+  <a href="https://wa.me/254715868511?text=Hi%20Keren%20Automobiles%2C%20I%27d%20like%20to%20book%20my%20car%20in." target="_blank" rel="noopener">WhatsApp</a>
+</div>
+
+<script>
+(function(){
+  [].forEach.call(document.images,function(i){i.addEventListener('error',function(){i.style.visibility='hidden';});});
+  var mb=document.getElementById('menuBtn'),nav=document.getElementById('nav'),sh=document.getElementById('shade');
+  function setMenu(o){nav.classList.toggle('open',o);sh.classList.toggle('on',o);mb.setAttribute('aria-expanded',o);mb.setAttribute('aria-label',o?'Close menu':'Open menu');}
+  mb.addEventListener('click',function(){setMenu(!nav.classList.contains('open'));});
+  sh.addEventListener('click',function(){setMenu(false);});
+  [].forEach.call(nav.querySelectorAll('a'),function(a){a.addEventListener('click',function(){setMenu(false);});});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'){setMenu(false);closeLb&&closeLb();}});
+  // home page: Call | WhatsApp bar shows once the hero buttons scroll away
+  var dock=document.getElementById('dock'),ctas=document.getElementById('heroCtas');
+  if(ctas&&'IntersectionObserver' in window){dock.classList.add('wait');new IntersectionObserver(function(es){es.forEach(function(e){dock.classList.toggle('wait',e.isIntersecting||e.boundingClientRect.top>0);});}).observe(ctas);}
+  // gallery lightbox
+  var lb=document.getElementById('lb'),closeLb=null;
+  if(lb){var big=lb.querySelector('img');
+    closeLb=function(){lb.classList.remove('on');};
+    [].forEach.call(document.querySelectorAll('.gal button'),function(b){b.addEventListener('click',function(){big.src=b.dataset.big;big.alt=b.querySelector('img').alt;lb.classList.add('on');});});
+    lb.addEventListener('click',function(e){if(e.target!==big)closeLb();});}
+  
+})();
+</script>
+
+</body>
+</html>
